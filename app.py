@@ -1,3 +1,5 @@
+from re import search
+
 import streamlit as st
 import pandas as pd
 
@@ -10,16 +12,19 @@ def load_css(file_path):
 #Load CSS
 load_css("style.css")
 
-#Page elements:
-st.markdown("""
-    <div class='logo'>Lexicon</div>
-    """, unsafe_allow_html=True)
-st.divider()
-st.markdown("""
-    <div class='sub-heading'>Currently Reading</div>
-    """,unsafe_allow_html=True
-)
-st.divider()
+pages = [
+    st.Page('app_pages/home.py', title='Home', icon='🏠'),
+    st.Page('app_pages/library.py', title='Library', icon='📖'),
+    st.Page('app_pages/search.py', title='Search', icon='🔎'),
+    st.Page('app_pages/stats.py', title='Statistics', icon='📊')
+]
+#note for later good video on navigation: https://www.youtube.com/watch?v=591rRCSEHt4
+
+#Add pages to sidebar
+pg = st.navigation(pages, position='sidebar', expanded=False)
+
+#Run app
+pg.run()
 
 
 

@@ -12,3 +12,7 @@
     font-size: 40px;
     font-weight: 300;
 }
+
+[data-testid=stSidebar] {
+        background-color: #e4ddd7;
+    }
