@@ -7,7 +7,7 @@
     font-size: 60px;
 }
 
-.sub-heading{
+.subHeading{
     font-family: 'Merriweather', serif;
     font-size: 40px;
     font-weight: 300;
@@ -16,3 +16,16 @@
 [data-testid=stSidebar] {
         background-color: #e4ddd7;
     }
+
+.bookObject {
+    background-color: white;
+    display: flex;
+}
+
+.bookCoverImage {
+    background-color: pink;
+}
+
+.bookObjectInfo {
+    background-color: blue;
+}
