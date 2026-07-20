@@ -26,5 +26,3 @@ pg = st.navigation(pages, position='sidebar', expanded=False)
 
 #Run app
 pg.run()
-
-
