@@ -1,3 +1,5 @@
+import json
+
 #Classes:
 class Book:
     def __init__ (self, title, author, pubYear, pageTotal, genre, tags, trackingPages, isbn):
@@ -13,11 +15,33 @@ class Book:
         self.currentProgress = 0 #Current progress in pages, if trackingPages is false, percentage can be calculated with this and total pages
         self.totalMinsRead = 0
 
+    #For saving the book objects to the user's JSON file each object must be passed in as a dictionary
+    def toDict(self):
+        return {"title": self.title, "author": self.author, "pubYear": self.pubYear, "pageTotal": self.pageTotal, "genres": self.genres, "tags": self.tags, "trackingPages": self.trackingPages, "isbn": self.isbn, "readingSessions": self.readingSessions, "currentProgress": self.currentProgress, "totalMinsRead": self.totalMinsRead}
+
     def updateProgress(self):
         pass
 
     def getCover(self):
         return f"https://covers.openlibrary.org/b/isbn/{self.isbn}-L.jpg"
+
+    #For recovering book objects from the saved JSON file, turns passed in JSON data back into object
+    @classmethod
+    def fromDict(Book, data):
+        #Create book object from the dictionary
+        book = Book(
+            title = data["title"], author = data["author"], pubYear=data["pubYear"], pageTotal=data["pageTotal"], genre = data["genres"], tags = data["tags"], trackingPages = data["trackingPages"], isbn = data["isbn"]
+        )
+
+        #account for the three default values that dont need to be passed in to create a book but may have been changed since
+        book.readingSessions = data.get("readingSessions")
+        book.currentProgress = data.get("currentProgress")
+        book.totalMinsRead = data.get("totalMinsRead")
+
+        return book
+
+
+
 
 class ReadingSession:
     def __init__(self, date, pagesRead, timeRead):

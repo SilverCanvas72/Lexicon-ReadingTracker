@@ -1,7 +1,17 @@
 import streamlit as st
 from testData import tempBooks
 from classes import Book
+from storage import save, load
 
+if st.button('test storage'):
+
+    save(tempBooks)
+
+    tempBooks[0].title = "test"
+    save(tempBooks)
+
+    books = load()
+    st.write(books[0].title)
 
 @st.dialog('Edit')
 #Pop Up displayed when reader want to add a session of reading
@@ -75,6 +85,7 @@ st.markdown("""
 )
 st.divider()
 
+load()
 for book in tempBooks:
     col1, col2 = st.columns([1, 3]) #Creates two columns, column 2 is 3 times as big as column 1
 

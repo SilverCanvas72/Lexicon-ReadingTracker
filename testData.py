@@ -23,3 +23,4 @@ tempBooks = [
     Book("The Diary of a Young Girl", "Anne Frank", 1947, 283, "Biography", ["borrowed", "reading"], True, "9780553296983"),
     Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", 1979, 224, "Science Fiction", ["finished", "owned", "physical"], True, "9780345391803"),
 ]
+

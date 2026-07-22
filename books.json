@@ -1,0 +1,332 @@
+[
+  {
+    "title": "test",
+    "author": "J.K. Rowling",
+    "pubYear": 1997,
+    "pageTotal": 223,
+    "genres": "Fantasy",
+    "tags": [
+      "finished",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780747532743",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "pubYear": 1937,
+    "pageTotal": 310,
+    "genres": "Fantasy",
+    "tags": [
+      "reading",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780261103344",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "pubYear": 1954,
+    "pageTotal": 1178,
+    "genres": "Fantasy",
+    "tags": [
+      "wantToRead",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780261103252",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "pubYear": 1949,
+    "pageTotal": 324,
+    "genres": "Dystopian",
+    "tags": [
+      "finished",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780451524935",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "pubYear": 1945,
+    "pageTotal": 112,
+    "genres": "Political Satire",
+    "tags": [
+      "finished",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780451526342",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "pubYear": 2008,
+    "pageTotal": 374,
+    "genres": "Young Adult",
+    "tags": [
+      "finished",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780439023528",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "pubYear": 2009,
+    "pageTotal": 375,
+    "genres": "Science Fiction",
+    "tags": [
+      "wantToRead",
+      "borrowed"
+    ],
+    "trackingPages": true,
+    "isbn": "9780385737951",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Percy Jackson: The Lightning Thief",
+    "author": "Rick Riordan",
+    "pubYear": 2005,
+    "pageTotal": 377,
+    "genres": "Fantasy",
+    "tags": [
+      "finished",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780786838653",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "pubYear": 2012,
+    "pageTotal": 313,
+    "genres": "Romance",
+    "tags": [
+      "finished",
+      "eBook"
+    ],
+    "trackingPages": false,
+    "isbn": "9780525478812",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "pubYear": 2005,
+    "pageTotal": 552,
+    "genres": "Historical Fiction",
+    "tags": [
+      "wantToBorrow"
+    ],
+    "trackingPages": true,
+    "isbn": "9780375842207",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "pubYear": 2003,
+    "pageTotal": 489,
+    "genres": "Thriller",
+    "tags": [
+      "reading",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780307474278",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "pubYear": 2011,
+    "pageTotal": 385,
+    "genres": "Science Fiction",
+    "tags": [
+      "owned",
+      "eBook",
+      "reading"
+    ],
+    "trackingPages": false,
+    "isbn": "9780804139021",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "pubYear": 2021,
+    "pageTotal": 496,
+    "genres": "Science Fiction",
+    "tags": [
+      "wantToRead",
+      "eBook"
+    ],
+    "trackingPages": false,
+    "isbn": "9780593135204",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "pubYear": 1988,
+    "pageTotal": 208,
+    "genres": "Adventure",
+    "tags": [
+      "finished",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780061122415",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "pubYear": 1925,
+    "pageTotal": 180,
+    "genres": "Classic",
+    "tags": [
+      "finished",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780743273565",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "pubYear": 1960,
+    "pageTotal": 336,
+    "genres": "Classic",
+    "tags": [
+      "finished",
+      "eBook"
+    ],
+    "trackingPages": false,
+    "isbn": "9780061120084",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "pubYear": 1965,
+    "pageTotal": 412,
+    "genres": "Science Fiction",
+    "tags": [
+      "wantToRead",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780441172719",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "pubYear": 1950,
+    "pageTotal": 767,
+    "genres": "Fantasy",
+    "tags": [
+      "wantToRead",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780066238500",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "pubYear": 1947,
+    "pageTotal": 283,
+    "genres": "Biography",
+    "tags": [
+      "borrowed",
+      "reading"
+    ],
+    "trackingPages": true,
+    "isbn": "9780553296983",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "pubYear": 1979,
+    "pageTotal": 224,
+    "genres": "Science Fiction",
+    "tags": [
+      "finished",
+      "owned",
+      "physical"
+    ],
+    "trackingPages": true,
+    "isbn": "9780345391803",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  }
+]

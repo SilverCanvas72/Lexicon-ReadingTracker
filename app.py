@@ -2,7 +2,6 @@ from re import search
 
 import streamlit as st
 import pandas as pd
-from classes import Book
 
 # Function: Load CSS - Takes CSS file_path parameter
 #Keeping the CSS in ints own file helps the main python code to be more readable and removes the need for <style> tags at every element
