@@ -1,19 +1,15 @@
 [
   {
-    "title": "test",
+    "title": "Harry Potter and the Philosopher's Stone",
     "author": "J.K. Rowling",
     "pubYear": 1997,
-    "pageTotal": 223,
+    "pageTotal": 450,
     "genres": "Fantasy",
-    "tags": [
-      "finished",
-      "owned",
-      "physical"
-    ],
-    "trackingPages": true,
+    "tags": null,
+    "trackingPages": "Pages",
     "isbn": "9780747532743",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 400,
     "totalMinsRead": 0
   },
   {
@@ -27,7 +23,7 @@
       "owned",
       "physical"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780261103344",
     "readingSessions": [],
     "currentProgress": 0,
@@ -61,10 +57,10 @@
       "owned",
       "physical"
     ],
-    "trackingPages": true,
+    "trackingPages": "Percentages",
     "isbn": "9780451524935",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 200,
     "totalMinsRead": 0
   },
   {
@@ -77,10 +73,10 @@
       "finished",
       "physical"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780451526342",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 50,
     "totalMinsRead": 0
   },
   {
@@ -110,10 +106,10 @@
       "wantToRead",
       "borrowed"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780385737951",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 375,
     "totalMinsRead": 0
   },
   {
@@ -122,11 +118,7 @@
     "pubYear": 2005,
     "pageTotal": 377,
     "genres": "Fantasy",
-    "tags": [
-      "finished",
-      "owned",
-      "physical"
-    ],
+    "tags": "Reading",
     "trackingPages": true,
     "isbn": "9780786838653",
     "readingSessions": [],
@@ -139,10 +131,7 @@
     "pubYear": 2012,
     "pageTotal": 313,
     "genres": "Romance",
-    "tags": [
-      "finished",
-      "eBook"
-    ],
+    "tags": "Want To Read",
     "trackingPages": false,
     "isbn": "9780525478812",
     "readingSessions": [],
