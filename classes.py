@@ -11,13 +11,14 @@ class Book:
         self.tags = tags #list of tags the book has been tagged with
         self.trackingPages = trackingPages #Boolean value determining if book is being tracked with pages or percentage
         self.isbn = isbn #reference used to display the books cover
+        self.status = '' # Current books stats options being : 'reading', 'read', 'wantToRead' and 'didNotFinish'
         self.readingSessions = [] # List of readingSession objects
-        self.currentProgress = 0 #Current progress in pages, if trackingPages is false, percentage can be calculated with this and total pages
+        self.currentProgress = 0 #Current progress in pages, if tracking Pages is false, percentage can be calculated with this and total pages
         self.totalMinsRead = 0
 
     #For saving the book objects to the user's JSON file each object must be passed in as a dictionary
     def toDict(self):
-        return {"title": self.title, "author": self.author, "pubYear": self.pubYear, "pageTotal": self.pageTotal, "genres": self.genres, "tags": self.tags, "trackingPages": self.trackingPages, "isbn": self.isbn, "readingSessions": self.readingSessions, "currentProgress": self.currentProgress, "totalMinsRead": self.totalMinsRead}
+        return {"title": self.title, "author": self.author, "pubYear": self.pubYear, "pageTotal": self.pageTotal, "genres": self.genres, "tags": self.tags, "trackingPages": self.trackingPages, "isbn": self.isbn, "status": self.status ,"readingSessions": self.readingSessions, "currentProgress": self.currentProgress, "totalMinsRead": self.totalMinsRead}
 
     def updateProgress(self):
         pass
@@ -33,7 +34,8 @@ class Book:
             title = data["title"], author = data["author"], pubYear=data["pubYear"], pageTotal=data["pageTotal"], genre = data["genres"], tags = data["tags"], trackingPages = data["trackingPages"], isbn = data["isbn"]
         )
 
-        #account for the three default values that dont need to be passed in to create a book but may have been changed since
+        #account for the three default values that don't need to be passed in to create a book but may have been changed since
+        book.status = data.get("status")
         book.readingSessions = data.get("readingSessions")
         book.currentProgress = data.get("currentProgress")
         book.totalMinsRead = data.get("totalMinsRead")

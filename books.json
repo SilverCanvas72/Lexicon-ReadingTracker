@@ -3,47 +3,53 @@
     "title": "Harry Potter and the Philosopher's Stone",
     "author": "J.K. Rowling",
     "pubYear": 1997,
-    "pageTotal": 450,
+    "pageTotal": 370,
     "genres": "Fantasy",
-    "tags": null,
+    "tags": [
+      "Borrowed",
+      "Want to Borrow",
+      "eBook",
+      "Owned",
+      "AudioBook"
+    ],
     "trackingPages": "Pages",
     "isbn": "9780747532743",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 400,
+    "currentProgress": 370,
     "totalMinsRead": 0
   },
   {
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "pubYear": 1937,
-    "pageTotal": 310,
+    "pageTotal": 1233,
     "genres": "Fantasy",
     "tags": [
-      "reading",
-      "owned",
-      "physical"
+      "Owned"
     ],
     "trackingPages": "Pages",
     "isbn": "9780261103344",
+    "status": "Reading",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 25,
     "totalMinsRead": 0
   },
   {
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "pubYear": 1954,
-    "pageTotal": 1178,
+    "pageTotal": 1182,
     "genres": "Fantasy",
     "tags": [
-      "wantToRead",
-      "owned",
-      "physical"
+      "Owned",
+      "Print"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780261103252",
+    "status": "Want To Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 58,
     "totalMinsRead": 0
   },
   {
@@ -53,12 +59,14 @@
     "pageTotal": 324,
     "genres": "Dystopian",
     "tags": [
-      "finished",
-      "owned",
-      "physical"
+      "Owned",
+      "Print",
+      "Want to Borrow",
+      "eBook"
     ],
     "trackingPages": "Percentages",
     "isbn": "9780451524935",
+    "status": "Did Not Finish",
     "readingSessions": [],
     "currentProgress": 200,
     "totalMinsRead": 0
@@ -67,16 +75,14 @@
     "title": "Animal Farm",
     "author": "George Orwell",
     "pubYear": 1945,
-    "pageTotal": 112,
+    "pageTotal": 119,
     "genres": "Political Satire",
-    "tags": [
-      "finished",
-      "physical"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780451526342",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 50,
+    "currentProgress": 119,
     "totalMinsRead": 0
   },
   {
@@ -85,15 +91,12 @@
     "pubYear": 2008,
     "pageTotal": 374,
     "genres": "Young Adult",
-    "tags": [
-      "finished",
-      "owned",
-      "physical"
-    ],
-    "trackingPages": true,
+    "tags": [],
+    "trackingPages": "Pages",
     "isbn": "9780439023528",
+    "status": "Want To Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 374,
     "totalMinsRead": 0
   },
   {
@@ -103,11 +106,11 @@
     "pageTotal": 375,
     "genres": "Science Fiction",
     "tags": [
-      "wantToRead",
-      "borrowed"
+      "Borrowed"
     ],
     "trackingPages": "Pages",
     "isbn": "9780385737951",
+    "status": "Read",
     "readingSessions": [],
     "currentProgress": 375,
     "totalMinsRead": 0
@@ -116,13 +119,14 @@
     "title": "Percy Jackson: The Lightning Thief",
     "author": "Rick Riordan",
     "pubYear": 2005,
-    "pageTotal": 377,
+    "pageTotal": 360,
     "genres": "Fantasy",
-    "tags": "Reading",
-    "trackingPages": true,
+    "tags": [],
+    "trackingPages": "Pages",
     "isbn": "9780786838653",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 360,
     "totalMinsRead": 0
   },
   {
@@ -131,11 +135,12 @@
     "pubYear": 2012,
     "pageTotal": 313,
     "genres": "Romance",
-    "tags": "Want To Read",
-    "trackingPages": false,
+    "tags": [],
+    "trackingPages": "Pages",
     "isbn": "9780525478812",
+    "status": "Reading",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 300,
     "totalMinsRead": 0
   },
   {
@@ -145,10 +150,11 @@
     "pageTotal": 552,
     "genres": "Historical Fiction",
     "tags": [
-      "wantToBorrow"
+      "Want to Borrow"
     ],
     "trackingPages": true,
     "isbn": "9780375842207",
+    "status": "Did Not Finish",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -160,12 +166,12 @@
     "pageTotal": 489,
     "genres": "Thriller",
     "tags": [
-      "reading",
-      "owned",
-      "physical"
+      "Owned",
+      "Print"
     ],
     "trackingPages": true,
     "isbn": "9780307474278",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -177,12 +183,12 @@
     "pageTotal": 385,
     "genres": "Science Fiction",
     "tags": [
-      "owned",
-      "eBook",
-      "reading"
+      "Owned",
+      "eBook"
     ],
     "trackingPages": false,
     "isbn": "9780804139021",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -194,11 +200,11 @@
     "pageTotal": 496,
     "genres": "Science Fiction",
     "tags": [
-      "wantToRead",
       "eBook"
     ],
     "trackingPages": false,
     "isbn": "9780593135204",
+    "status": "Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -210,13 +216,13 @@
     "pageTotal": 208,
     "genres": "Adventure",
     "tags": [
-      "finished",
-      "physical"
+      "Print"
     ],
     "trackingPages": true,
     "isbn": "9780061122415",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 208,
     "totalMinsRead": 0
   },
   {
@@ -226,12 +232,12 @@
     "pageTotal": 180,
     "genres": "Classic",
     "tags": [
-      "finished",
-      "owned",
-      "physical"
+      "Owned",
+      "Print"
     ],
     "trackingPages": true,
     "isbn": "9780743273565",
+    "status": "Did Not Finish",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -243,11 +249,11 @@
     "pageTotal": 336,
     "genres": "Classic",
     "tags": [
-      "finished",
       "eBook"
     ],
     "trackingPages": false,
     "isbn": "9780061120084",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -259,11 +265,11 @@
     "pageTotal": 412,
     "genres": "Science Fiction",
     "tags": [
-      "wantToRead",
-      "physical"
+      "Print"
     ],
     "trackingPages": true,
     "isbn": "9780441172719",
+    "status": "Did Not Finish",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -275,12 +281,12 @@
     "pageTotal": 767,
     "genres": "Fantasy",
     "tags": [
-      "wantToRead",
-      "owned",
-      "physical"
+      "Owned",
+      "Print"
     ],
     "trackingPages": true,
     "isbn": "9780066238500",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -292,11 +298,11 @@
     "pageTotal": 283,
     "genres": "Biography",
     "tags": [
-      "borrowed",
-      "reading"
+      "Borrowed"
     ],
     "trackingPages": true,
     "isbn": "9780553296983",
+    "status": "Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -308,14 +314,14 @@
     "pageTotal": 224,
     "genres": "Science Fiction",
     "tags": [
-      "finished",
-      "owned",
-      "physical"
+      "Owned",
+      "Print"
     ],
     "trackingPages": true,
     "isbn": "9780345391803",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 224,
     "totalMinsRead": 0
   }
 ]
