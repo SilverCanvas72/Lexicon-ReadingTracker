@@ -3,6 +3,11 @@ from testData import tempBooks
 from classes import Book
 from storage import save, load
 
+from st_clickable_images import clickable_images
+
+
+
+
 books = load()
 
 
@@ -29,12 +34,11 @@ def showBookPopup():
             st.session_state.newPageInput = books[index].pageTotal
             st.number_input('', key='newPageInput', min_value=1, max_value = 3000, width=150, label_visibility="collapsed", on_change=saveBookPopup, args=(index,))
 
-            #TODO Estimated tome logic.
-        st.write("Estimated Time: XX:XX Hours")
+
+        pagesLeft = books[index].pageTotal - books[index].currentProgress
+        st.write(f"Estimated Time To Finish: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours")
 
     statusTagOptions = ['Read', 'Want To Read', 'Reading', 'Did Not Finish']
-
-    st.write(books[index].status)
 
     st.session_state.newStatusInput = books[index].status
     st.pills("", statusTagOptions, selection_mode='single', on_change=saveBookPopup, args=(index,), key='newStatusInput')
@@ -44,9 +48,9 @@ def showBookPopup():
     st.session_state.newTagInput = books[index].tags
     st.multiselect('', tagOptions, placeholder='Book Tags', label_visibility='collapsed', on_change=saveBookPopup, key='newTagInput', args=(index,))
 
-
 @st.dialog('Progress Edit')
 def showProgressPopup():
+
     book = st.session_state.selectedBook
     index = st.session_state.selectedBookIndex
     cover, info = st.columns([2, 5])
@@ -60,12 +64,12 @@ def showProgressPopup():
         with pageInput:
             input,total = st.columns([1,1])
             with input:
-                newProgress = st.number_input('', min_value=0, max_value=3000, width=150, label_visibility="collapsed", value=book.currentProgress, key='newProgressInput')
-                books[index].currentProgress = newProgress
-
+                oldProgress = books[index].currentProgress #Temp variable for the last saved page number
+                newProgress = st.number_input('', min_value=oldProgress, max_value=(books[index].pageTotal), width=150, label_visibility="collapsed", value=book.currentProgress, key='newProgressInput')
+                pageDifference = newProgress - oldProgress #Find the amount of pages read before overwritting the old page number with the new one on the books list
+                                                           #This is then used for the time estimate by adding the pages read and the amount of time it took to the list of dictionaries
             with total:
-                newPageTotal = st.number_input('', min_value=0, max_value=3000, width=150, label_visibility="collapsed", value=book.pageTotal)
-                books[index].pageTotal = newPageTotal
+                newPageTotal = st.number_input('', min_value=books[index].currentProgress, max_value=3000, width=150, label_visibility="collapsed", value=book.pageTotal)
 
         #TODO: Create the logic for this, TRUE/FALSE vs PAGES/PERCENTAGES
         with pageBoolean:
@@ -73,23 +77,56 @@ def showProgressPopup():
 
         timeInput, finishedButton, saveButton = st.columns([2,1,1])
         with timeInput:
-            st.time_input('Time Read in Session', value=None) #TODO time input only allows increments of 15 mins, use seperate num input for hours than minutes
+            minsRead = st.number_input('Time in Session (mins)', value=None, min_value=0, max_value=180,) #TODO time input only allows increments of 15 mins, use seperate num input for hours than minutes
         with finishedButton:
+            st.write("") #Space fillers to place button inline with minutes input.
+
+            st.write("")
             if st.button("Finish"):
                 books[index].status = 'Read'
                 save(books)
                 st.rerun()  # To remove book from 'currently reading' part of homepage
         with saveButton:
+            st.write("")
+            st.write("")
             if st.button("Save"):
+                books[index].totalMinsRead += minsRead
+                books[index].readingSessions.append({'pagesRead': pageDifference, 'minsRead': minsRead})
+                books[index].currentProgress = newProgress
+                books[index].pageTotal = newPageTotal
                 save(books)
-                st.rerun() # Refreshes the page to update progress bars and book displays as well as collapsing popup
-                           # This also keeps the page scrolled to the right place.
+
+                if newProgress >= books[index].currentProgress and newProgress <= books[index].pageTotal: #Makes sure popup only closes if inputed value is greater than or equal to the last current page input.
+                                                                #The validation means a message will display when an incorrect message but this if statement prevents the windows form closing without the user seeing this message.
+                    st.rerun() # Refreshes the page to update progress bars and book displays as well as collapsing popup
+                               # This also keeps the page scrolled to the right place.
+                            # TODO fix this so the pop-up does not close
+                            # TODO Make input required for time read
 
 def saveBookPopup(index):
     books[index].status = st.session_state.newStatusInput
     books[index].tags = st.session_state.newTagInput
     books[index].pageTotal = st.session_state.newPageInput
     save(books)
+
+def calculateMinsPerPage(pages):
+    #Using each reading session an average minutes per page is created across all sorts of books of different page sizes
+    #The function passes in the total pages to read and it returns the amount of time in minutes to read it.
+    totalMins = 0
+    totalPages = 0
+    for book in books:
+        for session in book.readingSessions:
+            totalMins += session.get('minsRead')
+            totalPages += session.get('pagesRead')
+    if totalPages != 0:      #Make sure you are not dividing by zero to avoid error.
+        minsPerPage = totalMins/totalPages
+        return pages * minsPerPage
+    else:
+        return('Please add a reading session to calculate reading time averages')
+
+def minsToHours(minutes):
+    hours = round(minutes/60, 2)
+    return(hours)
 
 
 st.title('Homepage')
@@ -111,12 +148,15 @@ for bookIndex in range (0, len(books)):
         col1, col2 = st.columns([1, 3]) #Creates two columns, column 2 is 3 times as big as column 1
 
         with col1:
+
             st.image(books[bookIndex].getCover(), width=100)
 
         with col2:
             st.write(books[bookIndex].title)
-            st.write(f"Time Read: {round(books[bookIndex].totalMinsRead/60, 2)} hours")
-            st.write("Time Left: XX.XX hours") #TODO: Write estimate time to read function and implement here
+            st.write(f"Time Read: {minsToHours(books[bookIndex].totalMinsRead)} hours")
+            pagesLeft = books[bookIndex].pageTotal - books[bookIndex].currentProgress
+
+            st.write(f"Time Left: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours") #TODO: Write estimate time to read function and implement here
             progressCol, finishCol = st.columns([1, 2])
 
             with progressCol:
@@ -139,12 +179,21 @@ for bookIndex in range (0, len(books)):
 st.write('PopUp Tests')
 st.divider()
 
-for bookIndex in range (0, len(books)):
-    st.image(books[bookIndex].getCover(), width=50)
 
-    if st.button("", key=books[bookIndex].title):
-        st.session_state.selectedBook = books[bookIndex] #save book object temporarily to display correct popup
-        st.session_state.selectedBookIndex = bookIndex
+imagePaths = []
+for bookIndex in range (0, len(books)):
+    imagePaths.append(books[bookIndex].getCover())
+
+clickedIndex = clickable_images(
+        paths= imagePaths,
+        div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
+        img_style={"margin": "5px", "width": "100px", "height":"150px", "border-radius": "10px"},
+)
+if clickedIndex > -1:
+        st.session_state.selectedBook = books[clickedIndex] #save book object temporarily to display correct popup
+        st.session_state.selectedBookIndex = clickedIndex
         showBookPopup()
+
+
 st.divider()
 

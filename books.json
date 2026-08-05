@@ -3,20 +3,18 @@
     "title": "Harry Potter and the Philosopher's Stone",
     "author": "J.K. Rowling",
     "pubYear": 1997,
-    "pageTotal": 370,
+    "pageTotal": 371,
     "genres": "Fantasy",
     "tags": [
       "Borrowed",
       "Want to Borrow",
-      "eBook",
-      "Owned",
       "AudioBook"
     ],
     "trackingPages": "Pages",
     "isbn": "9780747532743",
     "status": "Read",
     "readingSessions": [],
-    "currentProgress": 370,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -30,9 +28,9 @@
     ],
     "trackingPages": "Pages",
     "isbn": "9780261103344",
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 25,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -43,14 +41,34 @@
     "genres": "Fantasy",
     "tags": [
       "Owned",
-      "Print"
+      "Print",
+      "Want to Borrow",
+      "Want to Own",
+      "eBook"
     ],
     "trackingPages": "Pages",
     "isbn": "9780261103252",
-    "status": "Want To Read",
-    "readingSessions": [],
-    "currentProgress": 58,
-    "totalMinsRead": 0
+    "status": "Read",
+    "readingSessions": [
+      {
+        "pagesRead": 42,
+        "minsRead": 30
+      },
+      {
+        "pagesRead": 30,
+        "minsRead": 10
+      },
+      {
+        "pagesRead": 20,
+        "minsRead": 10
+      },
+      {
+        "pagesRead": 50,
+        "minsRead": 60
+      }
+    ],
+    "currentProgress": 0,
+    "totalMinsRead": 110
   },
   {
     "title": "1984",
@@ -64,12 +82,17 @@
       "Want to Borrow",
       "eBook"
     ],
-    "trackingPages": "Percentages",
+    "trackingPages": "Pages",
     "isbn": "9780451524935",
-    "status": "Did Not Finish",
-    "readingSessions": [],
-    "currentProgress": 200,
-    "totalMinsRead": 0
+    "status": "Read",
+    "readingSessions": [
+      {
+        "pagesRead": 10,
+        "minsRead": 5
+      }
+    ],
+    "currentProgress": 0,
+    "totalMinsRead": 5
   },
   {
     "title": "Animal Farm",
@@ -80,9 +103,9 @@
     "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780451526342",
-    "status": "Read",
+    "status": "Want To Read",
     "readingSessions": [],
-    "currentProgress": 119,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -94,9 +117,9 @@
     "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780439023528",
-    "status": "Want To Read",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 374,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -110,9 +133,9 @@
     ],
     "trackingPages": "Pages",
     "isbn": "9780385737951",
-    "status": "Read",
+    "status": "Want To Read",
     "readingSessions": [],
-    "currentProgress": 375,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -124,9 +147,9 @@
     "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780786838653",
-    "status": "Read",
+    "status": "Want To Read",
     "readingSessions": [],
-    "currentProgress": 360,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -135,12 +158,15 @@
     "pubYear": 2012,
     "pageTotal": 313,
     "genres": "Romance",
-    "tags": [],
+    "tags": [
+      "Want to Own",
+      "AudioBook"
+    ],
     "trackingPages": "Pages",
     "isbn": "9780525478812",
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 300,
+    "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
@@ -154,7 +180,7 @@
     ],
     "trackingPages": true,
     "isbn": "9780375842207",
-    "status": "Did Not Finish",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -171,7 +197,7 @@
     ],
     "trackingPages": true,
     "isbn": "9780307474278",
-    "status": "Want To Read",
+    "status": "Reading",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -202,9 +228,9 @@
     "tags": [
       "eBook"
     ],
-    "trackingPages": false,
+    "trackingPages": "Pages",
     "isbn": "9780593135204",
-    "status": "Read",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -218,12 +244,21 @@
     "tags": [
       "Print"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780061122415",
     "status": "Read",
-    "readingSessions": [],
+    "readingSessions": [
+      {
+        "pagesRead": 10,
+        "minsRead": 10
+      },
+      {
+        "pagesRead": 30,
+        "minsRead": 5
+      }
+    ],
     "currentProgress": 208,
-    "totalMinsRead": 0
+    "totalMinsRead": 25
   },
   {
     "title": "The Great Gatsby",
@@ -235,12 +270,33 @@
       "Owned",
       "Print"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780743273565",
-    "status": "Did Not Finish",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
+    "status": "Reading",
+    "readingSessions": [
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 10,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 2
+      }
+    ],
+    "currentProgress": 10,
+    "totalMinsRead": 13
   },
   {
     "title": "To Kill a Mockingbird",
@@ -251,12 +307,21 @@
     "tags": [
       "eBook"
     ],
-    "trackingPages": false,
+    "trackingPages": "Pages",
     "isbn": "9780061120084",
-    "status": "Want To Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
+    "status": "Read",
+    "readingSessions": [
+      {
+        "pagesRead": 336,
+        "minsRead": 40
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 10
+      }
+    ],
+    "currentProgress": 336,
+    "totalMinsRead": 50
   },
   {
     "title": "Dune",
@@ -267,9 +332,9 @@
     "tags": [
       "Print"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780441172719",
-    "status": "Did Not Finish",
+    "status": "Reading",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -286,7 +351,7 @@
     ],
     "trackingPages": true,
     "isbn": "9780066238500",
-    "status": "Want To Read",
+    "status": "Reading",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -302,7 +367,7 @@
     ],
     "trackingPages": true,
     "isbn": "9780553296983",
-    "status": "Read",
+    "status": "Did Not Finish",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -317,11 +382,16 @@
       "Owned",
       "Print"
     ],
-    "trackingPages": true,
+    "trackingPages": "Pages",
     "isbn": "9780345391803",
-    "status": "Read",
-    "readingSessions": [],
-    "currentProgress": 224,
-    "totalMinsRead": 0
+    "status": "Did Not Finish",
+    "readingSessions": [
+      {
+        "pagesRead": 10,
+        "minsRead": 3
+      }
+    ],
+    "currentProgress": 10,
+    "totalMinsRead": 3
   }
 ]

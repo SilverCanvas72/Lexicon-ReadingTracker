@@ -3,6 +3,8 @@ from re import search
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout="centered") #sets default for pages to have wide margins, this is changed on a case by case basis, namely for the library page
+
 # Function: Load CSS - Takes CSS file_path parameter
 #Keeping the CSS in ints own file helps the main python code to be more readable and removes the need for <style> tags at every element
 def load_css(file_path):
