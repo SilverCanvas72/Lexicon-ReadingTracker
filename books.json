@@ -6,9 +6,7 @@
     "pageTotal": 371,
     "genres": "Fantasy",
     "tags": [
-      "Borrowed",
-      "Want to Borrow",
-      "AudioBook"
+      "Borrowed"
     ],
     "trackingPages": "Pages",
     "isbn": "9780747532743",
@@ -23,12 +21,10 @@
     "pubYear": 1937,
     "pageTotal": 1233,
     "genres": "Fantasy",
-    "tags": [
-      "Owned"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780261103344",
-    "status": "Read",
+    "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -39,16 +35,10 @@
     "pubYear": 1954,
     "pageTotal": 1182,
     "genres": "Fantasy",
-    "tags": [
-      "Owned",
-      "Print",
-      "Want to Borrow",
-      "Want to Own",
-      "eBook"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780261103252",
-    "status": "Read",
+    "status": "Reading",
     "readingSessions": [
       {
         "pagesRead": 42,
@@ -65,10 +55,22 @@
       {
         "pagesRead": 50,
         "minsRead": 60
+      },
+      {
+        "pagesRead": 100,
+        "minsRead": 5
+      },
+      {
+        "pagesRead": 50,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 50,
+        "minsRead": 10
       }
     ],
-    "currentProgress": 0,
-    "totalMinsRead": 110
+    "currentProgress": 200,
+    "totalMinsRead": 127
   },
   {
     "title": "1984",
@@ -77,10 +79,7 @@
     "pageTotal": 324,
     "genres": "Dystopian",
     "tags": [
-      "Owned",
-      "Print",
-      "Want to Borrow",
-      "eBook"
+      "Owned"
     ],
     "trackingPages": "Pages",
     "isbn": "9780451524935",
@@ -114,7 +113,9 @@
     "pubYear": 2008,
     "pageTotal": 374,
     "genres": "Young Adult",
-    "tags": [],
+    "tags": [
+      "eBook"
+    ],
     "trackingPages": "Pages",
     "isbn": "9780439023528",
     "status": "Read",
@@ -129,11 +130,11 @@
     "pageTotal": 375,
     "genres": "Science Fiction",
     "tags": [
-      "Borrowed"
+      "eBook"
     ],
     "trackingPages": "Pages",
     "isbn": "9780385737951",
-    "status": "Want To Read",
+    "status": null,
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -144,7 +145,9 @@
     "pubYear": 2005,
     "pageTotal": 360,
     "genres": "Fantasy",
-    "tags": [],
+    "tags": [
+      "Owned"
+    ],
     "trackingPages": "Pages",
     "isbn": "9780786838653",
     "status": "Want To Read",
@@ -158,10 +161,7 @@
     "pubYear": 2012,
     "pageTotal": 313,
     "genres": "Romance",
-    "tags": [
-      "Want to Own",
-      "AudioBook"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780525478812",
     "status": "Read",
@@ -175,9 +175,7 @@
     "pubYear": 2005,
     "pageTotal": 552,
     "genres": "Historical Fiction",
-    "tags": [
-      "Want to Borrow"
-    ],
+    "tags": [],
     "trackingPages": true,
     "isbn": "9780375842207",
     "status": "Want To Read",
@@ -192,8 +190,9 @@
     "pageTotal": 489,
     "genres": "Thriller",
     "tags": [
+      "Borrowed",
       "Owned",
-      "Print"
+      "eBook"
     ],
     "trackingPages": true,
     "isbn": "9780307474278",
@@ -208,13 +207,10 @@
     "pubYear": 2011,
     "pageTotal": 385,
     "genres": "Science Fiction",
-    "tags": [
-      "Owned",
-      "eBook"
-    ],
+    "tags": [],
     "trackingPages": false,
     "isbn": "9780804139021",
-    "status": "Want To Read",
+    "status": "Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
@@ -225,9 +221,7 @@
     "pubYear": 2021,
     "pageTotal": 496,
     "genres": "Science Fiction",
-    "tags": [
-      "eBook"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780593135204",
     "status": "Want To Read",
@@ -267,8 +261,7 @@
     "pageTotal": 180,
     "genres": "Classic",
     "tags": [
-      "Owned",
-      "Print"
+      "Borrowed"
     ],
     "trackingPages": "Pages",
     "isbn": "9780743273565",
@@ -304,9 +297,7 @@
     "pubYear": 1960,
     "pageTotal": 336,
     "genres": "Classic",
-    "tags": [
-      "eBook"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780061120084",
     "status": "Read",
@@ -346,8 +337,7 @@
     "pageTotal": 767,
     "genres": "Fantasy",
     "tags": [
-      "Owned",
-      "Print"
+      "Owned"
     ],
     "trackingPages": true,
     "isbn": "9780066238500",
@@ -362,9 +352,7 @@
     "pubYear": 1947,
     "pageTotal": 283,
     "genres": "Biography",
-    "tags": [
-      "Borrowed"
-    ],
+    "tags": [],
     "trackingPages": true,
     "isbn": "9780553296983",
     "status": "Did Not Finish",
@@ -378,10 +366,7 @@
     "pubYear": 1979,
     "pageTotal": 224,
     "genres": "Science Fiction",
-    "tags": [
-      "Owned",
-      "Print"
-    ],
+    "tags": [],
     "trackingPages": "Pages",
     "isbn": "9780345391803",
     "status": "Did Not Finish",

@@ -6,7 +6,7 @@ from storage import save, load
 from st_clickable_images import clickable_images
 
 
-
+# TODO - Fix page counts when changing books status
 
 books = load()
 
@@ -44,7 +44,7 @@ def showBookPopup():
     st.pills("", statusTagOptions, selection_mode='single', on_change=saveBookPopup, args=(index,), key='newStatusInput')
 
 
-    tagOptions = ['Owned', 'Borrowed', 'Want to Own', 'Want to Borrow', 'eBook', 'AudioBook', 'Print']
+    tagOptions = ['Owned', 'Borrowed', 'Want to Own', 'Want to Borrow', 'eBook', 'Audiobook', 'Physical']
     st.session_state.newTagInput = books[index].tags
     st.multiselect('', tagOptions, placeholder='Book Tags', label_visibility='collapsed', on_change=saveBookPopup, key='newTagInput', args=(index,))
 
@@ -77,7 +77,7 @@ def showProgressPopup():
 
         timeInput, finishedButton, saveButton = st.columns([2,1,1])
         with timeInput:
-            minsRead = st.number_input('Time in Session (mins)', value=None, min_value=0, max_value=180,) #TODO time input only allows increments of 15 mins, use seperate num input for hours than minutes
+            minsRead = st.number_input('Time in Session (mins)', value=None, min_value=0, max_value=180,)
         with finishedButton:
             st.write("") #Space fillers to place button inline with minutes input.
 
@@ -101,7 +101,8 @@ def showProgressPopup():
                     st.rerun() # Refreshes the page to update progress bars and book displays as well as collapsing popup
                                # This also keeps the page scrolled to the right place.
                             # TODO fix this so the pop-up does not close
-                            # TODO Make input required for time read
+                            # TODO Make input required for time read (Make a form with multiple submit buttons)
+
 
 def saveBookPopup(index):
     books[index].status = st.session_state.newStatusInput
@@ -143,7 +144,7 @@ st.divider()
 
 load()
 
-for bookIndex in range (0, len(books)):
+for bookIndex in range (0, (len(books))):
     if books[bookIndex].status == 'Reading':
         col1, col2 = st.columns([1, 3]) #Creates two columns, column 2 is 3 times as big as column 1
 
