@@ -196,9 +196,9 @@
     ],
     "trackingPages": true,
     "isbn": "9780307474278",
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 489,
     "totalMinsRead": 0
   },
   {
@@ -341,7 +341,7 @@
     ],
     "trackingPages": true,
     "isbn": "9780066238500",
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0

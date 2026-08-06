@@ -10,7 +10,6 @@ from st_clickable_images import clickable_images
 
 books = load()
 
-
 @st.dialog('Edit')
 #Pop Up displayed when reader want to add a session of reading
 #They open the popup by pressing the 'add progress' button

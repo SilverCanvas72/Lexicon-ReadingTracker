@@ -69,6 +69,11 @@ for bookIndex in filteredBooks:
 filteredBooksCol, filters = st.columns([3, 1])
 
 with filteredBooksCol:
+
+    if filteredBooks == []:
+        st.write('No Books Found')
+    else:
+        st.toast("Loading...", icon='⏳',duration=2)
     clickedIndex = clickable_images(
             paths= imagePaths,
             div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
@@ -105,7 +110,7 @@ with filters:
             st.session_state.status = status
             st.session_state.filters = getFilters()
             st.write(getFilteredBooks(st.session_state.status, st.session_state.filters))
-            #st.rerun()
+            st.rerun()
 
 
 
