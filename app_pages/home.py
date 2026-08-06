@@ -1,10 +1,9 @@
 import streamlit as st
-from testData import tempBooks
+# from testData import tempBooks
 from classes import Book
 from storage import save, load
 
 from st_clickable_images import clickable_images
-
 
 # TODO - Fix page counts when changing books status
 
@@ -68,15 +67,11 @@ def showProgressPopup():
             input,total = st.columns([1,1])
             with input:
                 oldProgress = books[index].currentProgress #Temp variable for the last saved page number
-                newProgress = st.number_input('', min_value=oldProgress, max_value=(books[index].pageTotal), width=150, label_visibility="collapsed", value=book.currentProgress, key='newProgressInput')
+                newProgress = st.number_input('Current Page', min_value=oldProgress, max_value=(books[index].pageTotal), width=150, value=book.currentProgress, key='newProgressInput')
                 pageDifference = newProgress - oldProgress #Find the amount of pages read before overwritting the old page number with the new one on the books list
                                                            #This is then used for the time estimate by adding the pages read and the amount of time it took to the list of dictionaries
             with total:
-                newPageTotal = st.number_input('', min_value=books[index].currentProgress, max_value=3000, width=150, label_visibility="collapsed", value=book.pageTotal)
-
-        #TODO: Create the logic for this, TRUE/FALSE vs PAGES/PERCENTAGES
-        with pageBoolean:
-                book.trackingPages = st.radio('', ['Pages', 'Percentages'], label_visibility="collapsed")
+                newPageTotal = st.number_input('Page Total', min_value=books[index].currentProgress, max_value=3000, width=150, value=book.pageTotal)
 
         timeInput, finishedButton, saveButton = st.columns([2,1,1])
         with timeInput:

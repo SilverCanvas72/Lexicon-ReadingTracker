@@ -6,14 +6,13 @@ import json
 #Every book is created as an object of this class, including temporary ones for search results
 
 class Book:
-    def __init__ (self, title, author, pubYear, pageTotal, genre, status, trackingPages, isbn):
+    def __init__ (self, title, author, pubYear, pageTotal, genre, status, isbn):
         self.title = title
         self.author = author
         self.pubYear = pubYear
         self.pageTotal = pageTotal
         self.genres = genre #first genre associated with book
         self.tags = [] #list of tags the book has been tagged with
-        self.trackingPages = trackingPages #Boolean value determining if book is being tracked with pages or percentage
         self.isbn = isbn #reference used to display the books cover
         self.status = status # Current books stats options being : 'reading', 'read', 'wantToRead' and 'didNotFinish'
         self.readingSessions = [] # List of readingSession objects
@@ -22,7 +21,7 @@ class Book:
 
     #For saving the book objects to the user's JSON file each object must be passed in as a dictionary
     def toDict(self):
-        return {"title": self.title, "author": self.author, "pubYear": self.pubYear, "pageTotal": self.pageTotal, "genres": self.genres, "tags": self.tags, "trackingPages": self.trackingPages, "isbn": self.isbn, "status": self.status ,"readingSessions": self.readingSessions, "currentProgress": self.currentProgress, "totalMinsRead": self.totalMinsRead}
+        return {"title": self.title, "author": self.author, "pubYear": self.pubYear, "pageTotal": self.pageTotal, "genres": self.genres, "tags": self.tags, "isbn": self.isbn, "status": self.status ,"readingSessions": self.readingSessions, "currentProgress": self.currentProgress, "totalMinsRead": self.totalMinsRead}
 
     def getCover(self):
         if self.isbn == '': #Display a placeholder, no cover image as I save the isbn as '' if there is no coverID
@@ -34,9 +33,8 @@ class Book:
     @classmethod
     def fromDict(Book, data):
         #Create book object from the dictionary
-        book = Book(
-            title = data["title"], author = data["author"], pubYear=data["pubYear"], pageTotal=data["pageTotal"], genre = data["genres"], status = data["status"], trackingPages = data["trackingPages"], isbn = data["isbn"]
-        )
+        book = Book(title = data["title"], author = data["author"], pubYear=data["pubYear"], pageTotal=data["pageTotal"], genre = data["genres"], status = data["status"], isbn = data["isbn"])
+
 
         #account for the three default values that don't need to be passed in to create a book but may have been changed since
         book.tags = data.get("tags")
