@@ -33,9 +33,9 @@
     "genres": "No Genre",
     "tags": [],
     "isbn": 11200092,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 1,
     "totalMinsRead": 0
   },
   {
@@ -48,14 +48,14 @@
       "Borrowed"
     ],
     "isbn": 7434883,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [
       {
         "pagesRead": 1,
         "minsRead": 3
       }
     ],
-    "currentProgress": 1,
+    "currentProgress": 400,
     "totalMinsRead": 3
   },
   {
@@ -97,7 +97,7 @@
     "title": "Where the Wild Things Are",
     "author": "Maurice Sendak",
     "pubYear": 1963,
-    "pageTotal": 100,
+    "pageTotal": 50,
     "genres": "No Genre",
     "tags": [],
     "isbn": 50842,
@@ -106,10 +106,14 @@
       {
         "pagesRead": 1,
         "minsRead": 1
+      },
+      {
+        "pagesRead": 24,
+        "minsRead": 3
       }
     ],
-    "currentProgress": 1,
-    "totalMinsRead": 1
+    "currentProgress": 25,
+    "totalMinsRead": 4
   },
   {
     "title": "Where the wild things are",
@@ -167,26 +171,13 @@
     "title": "The Empty House and Other Ghost Stories",
     "author": "Algernon Blackwood",
     "pubYear": 1906,
-    "pageTotal": 1,
-    "genres": "No Genre",
-    "tags": [],
-    "isbn": 2808629,
-    "status": "Want To Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Empty House and Other Ghost Stories",
-    "author": "Algernon Blackwood",
-    "pubYear": 1906,
     "pageTotal": 200,
     "genres": "No Genre",
     "tags": [],
     "isbn": 2808629,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 200,
     "totalMinsRead": 0
   },
   {
@@ -197,9 +188,9 @@
     "genres": "No Genre",
     "tags": [],
     "isbn": 9963635,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [],
-    "currentProgress": 0,
+    "currentProgress": 356,
     "totalMinsRead": 0
   },
   {
@@ -216,13 +207,26 @@
     "totalMinsRead": 0
   },
   {
-    "title": "The Martian",
-    "author": "Andy Weir",
-    "pubYear": 2011,
-    "pageTotal": 300,
+    "title": "Test of Time",
+    "author": "Jayne Ann Krentz",
+    "pubYear": 1987,
+    "pageTotal": 238,
     "genres": "No Genre",
     "tags": [],
-    "isbn": 11447888,
+    "isbn": 4258752,
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Rebecca",
+    "author": "Daphne du Maurier",
+    "pubYear": 1938,
+    "pageTotal": 200,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 8238729,
     "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,

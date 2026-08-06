@@ -128,8 +128,6 @@ def minsToHours(minutes):
     return(hours)
 
 
-st.title('Homepage')
-
 st.markdown("""
     <div class='logo'>Lexicon</div>
     """, unsafe_allow_html=True)

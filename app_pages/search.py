@@ -50,15 +50,18 @@ def displayResults(searchResults):
     if len(searchResults) == 0: #Check if searchResults = [] as that is what it is set to when there are no search results
         st.write('No Books Found')
 
+    st.write("")
+    st.write(f"Displaying {len(searchResults)} Results")
+
     for bookIndex in range(0, (len(searchResults))):
-        col1, col2, col3 = st.columns([1, 2, 3])
+        col1, col2, col3 = st.columns([1, 2, 2])
         with col1:
             st.image(searchResults[bookIndex].getCover(), width=100)
 
         with col2:
-            st.write(searchResults[bookIndex].title)
+            st.write(f'**{searchResults[bookIndex].title}**' )
             st.write(searchResults[bookIndex].author)
-            st.write(searchResults[bookIndex].genres)
+            st.write(f'{searchResults[bookIndex].pubYear}')
 
         with col3:
             with st.form( key=f'addBook{bookIndex}'):
@@ -90,15 +93,18 @@ st.title('Search')
 url = 'https://openlibrary.org/search.json'
 
 with st.form("searchBar"):
-    search = st.text_input("Search:", max_chars=200)
+    searchBar, searchBtn = st.columns([7 , 1])
+    with searchBar:
+        search = st.text_input("", max_chars=200, label_visibility="collapsed")
 
-    if st.form_submit_button("Search") and search.strip(): #Checks that the search bar has a search term before searching
-        params = {
-            "q": search,
-            "limit": 5
-        }
-        response = requests.get(url, params=params, verify=False)
-        st.session_state.searchResults = getSearchResults(response)
+    with searchBtn:
+        if st.form_submit_button("Search") and search.strip(): #Checks that the search bar has a search term before searching
+            params = {
+                "q": search,
+                "limit": 5
+            }
+            response = requests.get(url, params=params, verify=False)
+            st.session_state.searchResults = getSearchResults(response)
 
 displayResults(st.session_state.searchResults)
 
