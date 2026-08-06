@@ -38,7 +38,7 @@ def getSearchResults(response):
         except KeyError:
             isbn = ''
 
-        searchResults.append(Book(title, author, pubYear, 1, 'No Genre', 'Want To Read', "Pages", isbn))
+        searchResults.append(Book(title, author, pubYear, 1, 'No Genre', 'Want To Read', isbn))
     return(searchResults)
 
 def displayResults(searchResults):
