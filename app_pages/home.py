@@ -16,10 +16,12 @@ books = load()
 #Readers can here enter their current page or percentage and how long they read for
 #When they save their total pages read is calculated and tied to the time taken in the data for reading time estimations
 def showBookPopup():
+    books = load()
     st.empty()
 
     book = st.session_state.selectedBook #temporarily stored selected book object when the add progress button is clicked.
     index = st.session_state.selectedBookIndex
+
     cover, info = st.columns([2, 5])
     with cover:
         st.image(book.getCover(), width=200)
@@ -30,12 +32,14 @@ def showBookPopup():
         with label:
             st.write('Pages:')
         with pageInput:
-            st.session_state.newPageInput = books[index].pageTotal
+            st.session_state.newPageInput = book.pageTotal
             st.number_input('', key='newPageInput', min_value=1, max_value = 3000, width=150, label_visibility="collapsed", on_change=saveBookPopup, args=(index,))
 
-
         pagesLeft = books[index].pageTotal - books[index].currentProgress
-        st.write(f"Estimated Time To Finish: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours")
+        if (calculateMinsPerPage(pagesLeft)) != 0:
+            st.write(f"Time Left: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours")
+        else:
+            st.write('Please log a reading session to get reading estimates')
 
     statusTagOptions = ['Read', 'Want To Read', 'Reading', 'Did Not Finish']
 
@@ -122,7 +126,7 @@ def calculateMinsPerPage(pages):
         minsPerPage = totalMins/totalPages
         return pages * minsPerPage
     else:
-        return('Please add a reading session to calculate reading time averages')
+        return(0)
 
 def minsToHours(minutes):
     hours = round(minutes/60, 2)
@@ -156,7 +160,11 @@ for bookIndex in range (0, (len(books))):
             st.write(f"Time Read: {minsToHours(books[bookIndex].totalMinsRead)} hours")
             pagesLeft = books[bookIndex].pageTotal - books[bookIndex].currentProgress
 
-            st.write(f"Time Left: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours") #TODO: Write estimate time to read function and implement here
+            if (calculateMinsPerPage(pagesLeft)) != 0:
+                st.write(f"Time Left: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours")
+            else:
+                st.write('Please log a reading session to get reading estimates')
+
             progressCol, finishCol = st.columns([1, 2])
 
             with progressCol:
@@ -176,24 +184,31 @@ for bookIndex in range (0, (len(books))):
         st.divider()
 
 
-st.write('PopUp Tests')
-st.divider()
-
-
-imagePaths = []
-for bookIndex in range (0, len(books)):
-    imagePaths.append(books[bookIndex].getCover())
-
-clickedIndex = clickable_images(
-        paths= imagePaths,
-        div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
-        img_style={"margin": "5px", "width": "100px", "height":"150px", "border-radius": "10px"},
-)
-if clickedIndex > -1:
-        st.session_state.selectedBook = books[clickedIndex] #save book object temporarily to display correct popup
-        st.session_state.selectedBookIndex = clickedIndex
-        showBookPopup()
-
-
-st.divider()
-
+# st.markdown("""
+#     <div class='subHeading'>Want To Read</div>
+#     """,unsafe_allow_html=True
+# )
+#
+# wantToReadIndexs =[]
+# for bookIndex in range (0,len(books)):
+#     if books[bookIndex].status == "Want To Read":
+#         wantToReadIndexs.append(bookIndex)
+#
+# imagePaths = []
+# for index in range (0, len(wantToReadIndexs)):
+#     imagePaths.append(books[wantToReadIndexs[index]].getCover())
+#
+# clickedIndex = clickable_images(
+#          paths= imagePaths,
+#          div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
+#          img_style={"margin": "5px", "width": "100px", "height":"150px", "border-radius": "10px"},
+# )
+#
+# if clickedIndex > -1:
+#     st.session_state.selectedBook = books[wantToReadIndexs[clickedIndex]]  # save book object temporarily to display correct popup
+#     st.session_state.selectedBookIndex = wantToReadIndexs[clickedIndex]
+#     showBookPopup()
+#
+#
+# st.divider()
+#

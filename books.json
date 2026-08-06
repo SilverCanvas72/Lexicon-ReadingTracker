@@ -1,29 +1,145 @@
 [
   {
     "title": "Harry Potter and the Philosopher's Stone",
-    "author": "J.K. Rowling",
+    "author": "J. K. Rowling",
     "pubYear": 1997,
-    "pageTotal": 371,
-    "genres": "Fantasy",
-    "tags": [
-      "Borrowed"
-    ],
+    "pageTotal": 200,
+    "genres": "No Genre",
+    "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780747532743",
-    "status": "Read",
+    "isbn": 15155833,
+    "status": "Reading",
+    "readingSessions": [
+      {
+        "pagesRead": 1,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 9,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 1,
+        "minsRead": 3
+      }
+    ],
+    "currentProgress": 11,
+    "totalMinsRead": 7
+  },
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "pubYear": 2021,
+    "pageTotal": 1,
+    "genres": "No Genre",
+    "tags": [],
+    "trackingPages": "Pages",
+    "isbn": 11200092,
+    "status": "Reading",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "pubYear": 1937,
-    "pageTotal": 1233,
-    "genres": "Fantasy",
+    "title": "Red Queen",
+    "author": "Victoria Aveyard",
+    "pubYear": 2015,
+    "pageTotal": 400,
+    "genres": "No Genre",
+    "tags": [
+      "Borrowed"
+    ],
+    "trackingPages": "Pages",
+    "isbn": 7434883,
+    "status": "Reading",
+    "readingSessions": [
+      {
+        "pagesRead": 1,
+        "minsRead": 3
+      }
+    ],
+    "currentProgress": 1,
+    "totalMinsRead": 3
+  },
+  {
+    "title": "They Both Die at the End",
+    "author": "Adam Silvera",
+    "pubYear": 2017,
+    "pageTotal": 200,
+    "genres": "No Genre",
     "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780261103344",
+    "isbn": 9280553,
+    "status": "Reading",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "author": "Gabrielle Zevin",
+    "pubYear": 2022,
+    "pageTotal": 400,
+    "genres": "No Genre",
+    "tags": [],
+    "trackingPages": "Pages",
+    "isbn": 12859975,
+    "status": "Reading",
+    "readingSessions": [
+      {
+        "pagesRead": 10,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 290,
+        "minsRead": 120
+      }
+    ],
+    "currentProgress": 300,
+    "totalMinsRead": 123
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "author": "Maurice Sendak",
+    "pubYear": 1963,
+    "pageTotal": 100,
+    "genres": "No Genre",
+    "tags": [],
+    "trackingPages": "Pages",
+    "isbn": 50842,
+    "status": "Reading",
+    "readingSessions": [
+      {
+        "pagesRead": 1,
+        "minsRead": 1
+      }
+    ],
+    "currentProgress": 1,
+    "totalMinsRead": 1
+  },
+  {
+    "title": "Where the wild things are",
+    "author": "Author Not Found",
+    "pubYear": 2009,
+    "pageTotal": 1,
+    "genres": "No Genre",
+    "tags": [],
+    "trackingPages": "Pages",
+    "isbn": 10414954,
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Keeper of the Lost Cities",
+    "author": "Shannon Messenger",
+    "pubYear": 2012,
+    "pageTotal": 1,
+    "genres": "No Genre",
+    "tags": [],
+    "trackingPages": "Pages",
+    "isbn": 9320507,
     "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
@@ -33,350 +149,70 @@
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "pubYear": 1954,
-    "pageTotal": 1182,
-    "genres": "Fantasy",
+    "pageTotal": 1,
+    "genres": "No Genre",
     "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780261103252",
-    "status": "Reading",
-    "readingSessions": [
-      {
-        "pagesRead": 42,
-        "minsRead": 30
-      },
-      {
-        "pagesRead": 30,
-        "minsRead": 10
-      },
-      {
-        "pagesRead": 20,
-        "minsRead": 10
-      },
-      {
-        "pagesRead": 50,
-        "minsRead": 60
-      },
-      {
-        "pagesRead": 100,
-        "minsRead": 5
-      },
-      {
-        "pagesRead": 50,
-        "minsRead": 2
-      },
-      {
-        "pagesRead": 50,
-        "minsRead": 10
-      }
-    ],
-    "currentProgress": 200,
-    "totalMinsRead": 127
-  },
-  {
-    "title": "1984",
-    "author": "George Orwell",
-    "pubYear": 1949,
-    "pageTotal": 324,
-    "genres": "Dystopian",
-    "tags": [
-      "Owned"
-    ],
-    "trackingPages": "Pages",
-    "isbn": "9780451524935",
-    "status": "Read",
-    "readingSessions": [
-      {
-        "pagesRead": 10,
-        "minsRead": 5
-      }
-    ],
-    "currentProgress": 0,
-    "totalMinsRead": 5
-  },
-  {
-    "title": "Animal Farm",
-    "author": "George Orwell",
-    "pubYear": 1945,
-    "pageTotal": 119,
-    "genres": "Political Satire",
-    "tags": [],
-    "trackingPages": "Pages",
-    "isbn": "9780451526342",
+    "isbn": 14625765,
     "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
-    "title": "The Hunger Games",
-    "author": "Suzanne Collins",
-    "pubYear": 2008,
-    "pageTotal": 374,
-    "genres": "Young Adult",
-    "tags": [
-      "eBook"
-    ],
-    "trackingPages": "Pages",
-    "isbn": "9780439023528",
-    "status": "Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Maze Runner",
-    "author": "James Dashner",
-    "pubYear": 2009,
-    "pageTotal": 375,
-    "genres": "Science Fiction",
-    "tags": [
-      "eBook"
-    ],
-    "trackingPages": "Pages",
-    "isbn": "9780385737951",
-    "status": null,
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "Percy Jackson: The Lightning Thief",
-    "author": "Rick Riordan",
-    "pubYear": 2005,
-    "pageTotal": 360,
-    "genres": "Fantasy",
-    "tags": [
-      "Owned"
-    ],
-    "trackingPages": "Pages",
-    "isbn": "9780786838653",
-    "status": "Want To Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Fault in Our Stars",
-    "author": "John Green",
-    "pubYear": 2012,
-    "pageTotal": 313,
-    "genres": "Romance",
-    "tags": [],
-    "trackingPages": "Pages",
-    "isbn": "9780525478812",
-    "status": "Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Book Thief",
-    "author": "Markus Zusak",
-    "pubYear": 2005,
-    "pageTotal": 552,
-    "genres": "Historical Fiction",
-    "tags": [],
-    "trackingPages": true,
-    "isbn": "9780375842207",
-    "status": "Want To Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Da Vinci Code",
-    "author": "Dan Brown",
-    "pubYear": 2003,
-    "pageTotal": 489,
-    "genres": "Thriller",
-    "tags": [
-      "Borrowed",
-      "Owned",
-      "eBook"
-    ],
-    "trackingPages": true,
-    "isbn": "9780307474278",
-    "status": "Read",
-    "readingSessions": [],
-    "currentProgress": 489,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Martian",
-    "author": "Andy Weir",
+    "title": "The Psychopath Test",
+    "author": "Jon Ronson",
     "pubYear": 2011,
-    "pageTotal": 385,
-    "genres": "Science Fiction",
-    "tags": [],
-    "trackingPages": false,
-    "isbn": "9780804139021",
-    "status": "Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "Project Hail Mary",
-    "author": "Andy Weir",
-    "pubYear": 2021,
-    "pageTotal": 496,
-    "genres": "Science Fiction",
+    "pageTotal": 1,
+    "genres": "No Genre",
     "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780593135204",
+    "isbn": 7240390,
     "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "pubYear": 1988,
-    "pageTotal": 208,
-    "genres": "Adventure",
-    "tags": [
-      "Print"
-    ],
-    "trackingPages": "Pages",
-    "isbn": "9780061122415",
-    "status": "Read",
-    "readingSessions": [
-      {
-        "pagesRead": 10,
-        "minsRead": 10
-      },
-      {
-        "pagesRead": 30,
-        "minsRead": 5
-      }
-    ],
-    "currentProgress": 208,
-    "totalMinsRead": 25
-  },
-  {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "pubYear": 1925,
-    "pageTotal": 180,
-    "genres": "Classic",
-    "tags": [
-      "Borrowed"
-    ],
-    "trackingPages": "Pages",
-    "isbn": "9780743273565",
-    "status": "Reading",
-    "readingSessions": [
-      {
-        "pagesRead": 0,
-        "minsRead": 3
-      },
-      {
-        "pagesRead": 0,
-        "minsRead": 3
-      },
-      {
-        "pagesRead": 0,
-        "minsRead": 3
-      },
-      {
-        "pagesRead": 10,
-        "minsRead": 2
-      },
-      {
-        "pagesRead": 0,
-        "minsRead": 2
-      }
-    ],
-    "currentProgress": 10,
-    "totalMinsRead": 13
-  },
-  {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "pubYear": 1960,
-    "pageTotal": 336,
-    "genres": "Classic",
+    "title": "The Empty House and Other Ghost Stories",
+    "author": "Algernon Blackwood",
+    "pubYear": 1906,
+    "pageTotal": 1,
+    "genres": "No Genre",
     "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780061120084",
-    "status": "Read",
-    "readingSessions": [
-      {
-        "pagesRead": 336,
-        "minsRead": 40
-      },
-      {
-        "pagesRead": 0,
-        "minsRead": 10
-      }
-    ],
-    "currentProgress": 336,
-    "totalMinsRead": 50
+    "isbn": 2808629,
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
   },
   {
-    "title": "Dune",
-    "author": "Frank Herbert",
-    "pubYear": 1965,
-    "pageTotal": 412,
-    "genres": "Science Fiction",
-    "tags": [
-      "Print"
-    ],
+    "title": "The Empty House and Other Ghost Stories",
+    "author": "Algernon Blackwood",
+    "pubYear": 1906,
+    "pageTotal": 200,
+    "genres": "No Genre",
+    "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780441172719",
+    "isbn": 2808629,
     "status": "Reading",
     "readingSessions": [],
     "currentProgress": 0,
     "totalMinsRead": 0
   },
   {
-    "title": "The Chronicles of Narnia",
-    "author": "C.S. Lewis",
-    "pubYear": 1950,
-    "pageTotal": 767,
-    "genres": "Fantasy",
-    "tags": [
-      "Owned"
-    ],
-    "trackingPages": true,
-    "isbn": "9780066238500",
-    "status": "Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Diary of a Young Girl",
-    "author": "Anne Frank",
-    "pubYear": 1947,
-    "pageTotal": 283,
-    "genres": "Biography",
-    "tags": [],
-    "trackingPages": true,
-    "isbn": "9780553296983",
-    "status": "Did Not Finish",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
-  },
-  {
-    "title": "The Hitchhiker's Guide to the Galaxy",
-    "author": "Douglas Adams",
-    "pubYear": 1979,
-    "pageTotal": 224,
-    "genres": "Science Fiction",
+    "title": "Free Spirit",
+    "author": "Penny Jordan",
+    "pubYear": 1989,
+    "pageTotal": 356,
+    "genres": "No Genre",
     "tags": [],
     "trackingPages": "Pages",
-    "isbn": "9780345391803",
-    "status": "Did Not Finish",
-    "readingSessions": [
-      {
-        "pagesRead": 10,
-        "minsRead": 3
-      }
-    ],
-    "currentProgress": 10,
-    "totalMinsRead": 3
+    "isbn": 9963635,
+    "status": "Reading",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
   }
 ]
