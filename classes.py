@@ -1,6 +1,15 @@
 import json
 
-#Classes:
+#CLASSES
+# Contains the book class, its parameters and methods
+
+
+# Justification for the use of OOP:
+#     + The use of an OOP approach allows for objects to be made logically and for the program to be scaled to include many books.
+#     + Each Book is represented by a Book object, with all relevant attributes part of it
+
+#     + The programs structure uses a list of these objects saved to and loaded from the JSON.
+#     + Overall this improves robustness and supports future expansion.
 
 #Book Class
 #Every book is created as an object of this class, including temporary ones for search results
@@ -20,8 +29,11 @@ class Book:
         self.totalMinsRead = 0
 
     #For saving the book objects to the user's JSON file each object must be passed in as a dictionary
+    # Called from the save function when saving the 'books' list to JSON
+    # A method of the class as it uses each of the books attributes
     def toDict(self):
         return {"title": self.title, "author": self.author, "pubYear": self.pubYear, "pageTotal": self.pageTotal, "genres": self.genres, "tags": self.tags, "isbn": self.isbn, "status": self.status ,"readingSessions": self.readingSessions, "currentProgress": self.currentProgress, "totalMinsRead": self.totalMinsRead}
+
 
     def getCover(self):
         if self.isbn == '': #Display a placeholder, no cover image as I save the isbn as '' if there is no coverID
@@ -30,11 +42,11 @@ class Book:
             return f'https://covers.openlibrary.org/b/id/{self.isbn}-L.jpg'
 
     #For recovering book objects from the saved JSON file, turns passed in JSON data back into object
+    # Called from the load function to convert the json back into book objects.
     @classmethod
     def fromDict(Book, data):
         #Create book object from the dictionary
         book = Book(title = data["title"], author = data["author"], pubYear=data["pubYear"], pageTotal=data["pageTotal"], genre = data["genres"], status = data["status"], isbn = data["isbn"])
-
 
         #account for the three default values that don't need to be passed in to create a book but may have been changed since
         book.tags = data.get("tags")

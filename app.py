@@ -12,21 +12,12 @@ import streamlit as st
     #     + Add books from the Open Libraries API
     #     + Add progress on their books including pages read and time taken
     #     + This data is used to estimate how long it will take users to finish books or read unstarted books
-    #     + Users can filter their 'library' (all their added books) by tags that they set for each book including:
+    #     + Users can search their 'library' (all their added books) by tags that they set for each book including:
     #         + Read, Reading, Want to Read and Did not Finish
     #         + Ebook, Audiobook and Print
     #         + Want to Own, Want to Borrow, Borrowed and Owned
-    #     + Users can set a reading goal which is contributed to as they read books.
     #     + All books data is stored in a JSON file local to the user so they can refresh or close the page and come back later
     # Full Feature lists as well as functional and non-functional requirements can be read in the SRS document
-
-
-    # Justification for the use of OOP:
-    #     + The use of an OOP aproach allows for objects to be made logically, such as the Book class
-    #     + Each Book is represented by a Book object
-    #     + Classes for
-
-    #     + Overall this improves robustness and supports future expansion.
 
 st.set_page_config(layout="centered") #sets default for pages to have wide margins, this is changed on a case by case basis, namely for the library page
 
@@ -39,6 +30,8 @@ def loadCss(filePath):
 #Load CSS
 loadCss("style.css")
 
+
+#Navigation and sidebar setup
 pages = [
     st.Page('app_pages/home.py', title='Home', icon='🏠'),
     st.Page('app_pages/library.py', title='Library', icon='📖'),
