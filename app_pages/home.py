@@ -15,8 +15,9 @@ books = load()
 #Readers can here enter their current page or percentage and how long they read for
 #When they save their total pages read is calculated and tied to the time taken in the data for reading time estimations
 def showBookPopup():
-    books = load()
+
     st.empty()
+    books = load()
 
     book = st.session_state.selectedBook #temporarily stored selected book object when the add progress button is clicked.
     index = st.session_state.selectedBookIndex
@@ -33,7 +34,6 @@ def showBookPopup():
         with pageInput:
             st.session_state.newPageInput = book.pageTotal
             st.number_input('', key='newPageInput', min_value=1, max_value = 3000, width=150, label_visibility="collapsed", on_change=saveBookPopup, args=(index,))
-
         pagesLeft = books[index].pageTotal - books[index].currentProgress
         if (calculateMinsPerPage(pagesLeft)) != 0:
             st.write(f"Time Left: {minsToHours(calculateMinsPerPage(pagesLeft))} Hours")
@@ -62,8 +62,9 @@ def showProgressPopup():
     with info:
         st.write(book.title)
         st.progress((book.currentProgress / book.pageTotal))
-        pageInput, pageBoolean = st.columns([3, 2])
-        with pageInput:
+
+        with st.form("progressForm"):
+
             input,total = st.columns([1,1])
             with input:
                 oldProgress = books[index].currentProgress #Temp variable for the last saved page number
@@ -73,36 +74,40 @@ def showProgressPopup():
             with total:
                 newPageTotal = st.number_input('Page Total', min_value=books[index].currentProgress, max_value=3000, width=150, value=book.pageTotal)
 
-        timeInput, finishedButton, saveButton = st.columns([2,1,1])
-        with timeInput:
-            minsRead = st.number_input('Time in Session (mins)', value=None, min_value=0, max_value=180,)
-        with finishedButton:
-            st.write("") #Space fillers to place button inline with minutes input.
+            timeInput, saveButton = st.columns([2,1])
+            with timeInput:
+                minsRead = st.number_input('Time in Session (mins)', value=None, min_value=0, max_value=180,)
 
-            st.write("")
-            if st.button("Finish"):
-                books[index].status = 'Read'
-                save(books)
-                st.rerun()  # To remove book from 'currently reading' part of homepage
-        with saveButton:
-            st.write("")
-            st.write("")
-            if st.button("Save"):
-                books[index].totalMinsRead += minsRead
-                books[index].readingSessions.append({'pagesRead': pageDifference, 'minsRead': minsRead})
-                books[index].currentProgress = newProgress
-                books[index].pageTotal = newPageTotal
-                save(books)
+            with saveButton:
+                st.write("")
+                st.write("")
 
-                if newProgress >= books[index].currentProgress and newProgress <= books[index].pageTotal: #Makes sure popup only closes if inputed value is greater than or equal to the last current page input.
-                                                                #The validation means a message will display when an incorrect message but this if statement prevents the windows form closing without the user seeing this message.
-                    st.rerun() # Refreshes the page to update progress bars and book displays as well as collapsing popup
-                               # This also keeps the page scrolled to the right place.
-                            # TODO fix this so the pop-up does not close
-                            # TODO Make input required for time read (Make a form with multiple submit buttons)
+                submitted = st.form_submit_button("Save")
+                if submitted:
+
+                    if oldProgress == newProgress:
+                        st.error("Please Input a new Current Page")
+
+                    elif minsRead == None:
+                        st.error("Please Input a valid time")
+
+
+                    elif newProgress == newPageTotal:
+                        books[index].status = 'Read'
+                        save(books)
+
+                    else:
+                        books[index].totalMinsRead += minsRead
+                        books[index].readingSessions.append({'pagesRead': pageDifference, 'minsRead': minsRead})
+                        books[index].currentProgress = newProgress
+                        books[index].pageTotal = newPageTotal
+                        save(books)
+                        st.rerun()
 
 
 def saveBookPopup(index):
+
+    books = load()
     books[index].status = st.session_state.newStatusInput
     books[index].tags = st.session_state.newTagInput
     books[index].pageTotal = st.session_state.newPageInput

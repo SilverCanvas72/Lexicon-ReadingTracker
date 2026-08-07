@@ -49,7 +49,7 @@ def getFilteredBooks(status, filters):
 
 st.title('Library')
 
-books = load()
+
 
 # Set filters as allowing anything when the page first load and no filters have been set.
 if "status" not in st.session_state:
@@ -59,6 +59,7 @@ if "filters" not in st.session_state:
 
 st.set_page_config(layout="wide")
 
+books = load()
 
 filteredBooks = getFilteredBooks(st.session_state.status, st.session_state.filters)
 

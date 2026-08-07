@@ -7,7 +7,7 @@
     "genres": "No Genre",
     "tags": [],
     "isbn": 15155833,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [
       {
         "pagesRead": 1,
@@ -20,10 +20,86 @@
       {
         "pagesRead": 1,
         "minsRead": 3
+      },
+      {
+        "pagesRead": 19,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 5,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 5,
+        "minsRead": 10
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 10
+      },
+      {
+        "pagesRead": 10,
+        "minsRead": 4
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 4
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 5,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 2
+      },
+      {
+        "pagesRead": 0,
+        "minsRead": 2
       }
     ],
-    "currentProgress": 11,
-    "totalMinsRead": 7
+    "currentProgress": 55,
+    "totalMinsRead": 75
   },
   {
     "title": "Project Hail Mary",
@@ -42,7 +118,7 @@
     "title": "Red Queen",
     "author": "Victoria Aveyard",
     "pubYear": 2015,
-    "pageTotal": 400,
+    "pageTotal": 450,
     "genres": "No Genre",
     "tags": [
       "Borrowed"
@@ -62,14 +138,25 @@
     "title": "They Both Die at the End",
     "author": "Adam Silvera",
     "pubYear": 2017,
-    "pageTotal": 200,
+    "pageTotal": 300,
     "genres": "No Genre",
-    "tags": [],
+    "tags": [
+      "Owned"
+    ],
     "isbn": 9280553,
-    "status": "Reading",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
+    "status": "Want To Read",
+    "readingSessions": [
+      {
+        "pagesRead": 100,
+        "minsRead": 30
+      },
+      {
+        "pagesRead": 20,
+        "minsRead": 10
+      }
+    ],
+    "currentProgress": 120,
+    "totalMinsRead": 40
   },
   {
     "title": "Tomorrow, and Tomorrow, and Tomorrow",
@@ -79,7 +166,7 @@
     "genres": "No Genre",
     "tags": [],
     "isbn": 12859975,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [
       {
         "pagesRead": 10,
@@ -90,7 +177,7 @@
         "minsRead": 120
       }
     ],
-    "currentProgress": 300,
+    "currentProgress": 400,
     "totalMinsRead": 123
   },
   {
@@ -101,7 +188,7 @@
     "genres": "No Genre",
     "tags": [],
     "isbn": 50842,
-    "status": "Reading",
+    "status": "Read",
     "readingSessions": [
       {
         "pagesRead": 1,
@@ -110,10 +197,14 @@
       {
         "pagesRead": 24,
         "minsRead": 3
+      },
+      {
+        "pagesRead": 5,
+        "minsRead": 3
       }
     ],
-    "currentProgress": 25,
-    "totalMinsRead": 4
+    "currentProgress": 30,
+    "totalMinsRead": 7
   },
   {
     "title": "Where the wild things are",
@@ -158,14 +249,25 @@
     "title": "The Psychopath Test",
     "author": "Jon Ronson",
     "pubYear": 2011,
-    "pageTotal": 1,
+    "pageTotal": 250,
     "genres": "No Genre",
-    "tags": [],
+    "tags": [
+      "Owned"
+    ],
     "isbn": 7240390,
-    "status": "Want To Read",
-    "readingSessions": [],
-    "currentProgress": 0,
-    "totalMinsRead": 0
+    "status": "Reading",
+    "readingSessions": [
+      {
+        "pagesRead": 20,
+        "minsRead": 3
+      },
+      {
+        "pagesRead": 50,
+        "minsRead": 5
+      }
+    ],
+    "currentProgress": 70,
+    "totalMinsRead": 8
   },
   {
     "title": "The Empty House and Other Ghost Stories",
@@ -225,8 +327,166 @@
     "pubYear": 1938,
     "pageTotal": 200,
     "genres": "No Genre",
-    "tags": [],
+    "tags": [
+      "Owned"
+    ],
     "isbn": 8238729,
+    "status": "Did Not Finish",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Psychopath Test",
+    "author": "Jon Ronson",
+    "pubYear": 2011,
+    "pageTotal": 345,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 7240390,
+    "status": "Did Not Finish",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J. K. Rowling",
+    "pubYear": 1998,
+    "pageTotal": 245,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 15158664,
+    "status": "Did Not Finish",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Rent",
+    "author": "Jonathan Larson",
+    "pubYear": 1996,
+    "pageTotal": 242,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 559535,
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Rent-a-Bride Ltd",
+    "author": "Emma Goldrick",
+    "pubYear": 1985,
+    "pageTotal": 200,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 6604706,
+    "status": "Reading",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "A Long Way from Chicago",
+    "author": "Richard Peck",
+    "pubYear": 1998,
+    "pageTotal": 1234,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 5439199,
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "pubYear": 1954,
+    "pageTotal": 123,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 14627060,
+    "status": null,
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Lorax",
+    "author": "Dr. Seuss",
+    "pubYear": 1911,
+    "pageTotal": 20,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 422253,
+    "status": "Did Not Finish",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "How to Help the Earth--by the Lorax",
+    "author": "Tish Rabe",
+    "pubYear": 2012,
+    "pageTotal": 2,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 7025163,
+    "status": "Did Not Finish",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "The Lorax",
+    "author": "Author Not Found",
+    "pubYear": 1999,
+    "pageTotal": 3,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 9160325,
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Look for the Lorax",
+    "author": "Tish Rabe",
+    "pubYear": 2012,
+    "pageTotal": 10,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 7025162,
+    "status": "Did Not Finish",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "the lorax",
+    "author": "dr.suess",
+    "pubYear": 1971,
+    "pageTotal": 15,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": "",
+    "status": "Want To Read",
+    "readingSessions": [],
+    "currentProgress": 0,
+    "totalMinsRead": 0
+  },
+  {
+    "title": "Frozen",
+    "author": "Bill Scollon",
+    "pubYear": 2013,
+    "pageTotal": 20,
+    "genres": "No Genre",
+    "tags": [],
+    "isbn": 7333917,
     "status": "Want To Read",
     "readingSessions": [],
     "currentProgress": 0,

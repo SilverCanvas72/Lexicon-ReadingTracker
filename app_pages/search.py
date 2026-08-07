@@ -4,6 +4,8 @@ from classes import Book
 from storage import save, load
 
 
+books = load()
+
 def getSearchResults(response):
     if response.status_code != 200: #If the query was a failure:
         return None
@@ -66,7 +68,6 @@ def displayResults(searchResults):
         with col3:
             with st.form( key=f'addBook{bookIndex}'):
                 pages = st.number_input(min_value=1, max_value=3000, label='Pages', key=f'addPages{bookIndex}')
-
                 submitted = st.form_submit_button("Add to Library")
 
                 if submitted:
@@ -82,11 +83,8 @@ def displayResults(searchResults):
         st.divider()
 
 
-
 if "searchResults" not in st.session_state:
     st.session_state.searchResults = ''
-
-books=load()
 
 st.title('Search')
 
